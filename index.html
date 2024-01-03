@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        #params {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="params">
+        <select name="sort" id="sort">
+            <option value="bubble">Bubble Sort</option>
+            <option value="insertion">Insertion Sort</option>
+            <option value="merge"> Merge Sort</option>
+        </select>
+        <input type="text" placeholder="Number of Elements" id="num" value=30>
+        <div style="display: flex; align-items: center; gap: 5px;">
+            <label for="speed">Speed</label>
+            <input type="range" min=1 max=100 value=50 id="speed">
+        </div>
+        <button id="visualize">Visualize</button>
+    </div>
+    <canvas></canvas>
+    <script src="./index.js"></script>
+</body>
+</html>
